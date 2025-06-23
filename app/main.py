@@ -1,4 +1,6 @@
 import math
+
+
 class OnlineCourse:
     def __init__(self, name: str, description: str, weeks: int):
         self.name = name
@@ -14,7 +16,5 @@ class OnlineCourse:
         name = course_dict["name"]
         description = course_dict["description"]
         days = course_dict["days"]
-
         weeks = cls.days_to_weeks(days)
-
         return cls(name, description, weeks)
